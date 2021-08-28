@@ -1,0 +1,79 @@
+@media (max-width:600px) {
+    body{
+        background-color: red;
+       
+    }
+
+    form{
+       max-width: 90vw;
+       
+       
+    }
+
+    form > div:nth-child(1){
+        flex-direction: column;
+    }
+    
+
+    fieldset {
+        opacity: 1;
+        padding: 19px;
+    }
+
+  
+
+ 
+
+    form > div:nth-child(2) > input{
+        width: 50%;
+        margin: 20px;
+        padding: 9px;
+        
+    }
+
+    form > div:nth-child(1) input{
+        padding: 9px;
+        margin: 2.5px 0;
+    }
+
+    
+
+    .container{
+        background-color: aliceblue;    
+        flex: auto;
+        justify-content:center;
+        align-items: center;
+        width: 100vw;
+        padding: auto;
+        
+    }
+    
+    .container_form{
+        opacity: 0;
+        flex:auto;
+        flex-direction: column;
+        height: auto;
+      
+        transition: linear 500ms;
+    }    
+
+    .tela_menu{
+        z-index: 1;
+        top: 0;
+        flex: auto;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        transition: linear 500ms;
+    }
+
+    
+
+
+    main{
+        flex:auto;
+        background-color: yellow;
+        height: 100vh;
+    }
+    
+}

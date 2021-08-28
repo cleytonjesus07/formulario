@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/styleResponsive.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="tela_menu">
+            <button id="btnForm">
+                <h1>Formulário</h1>
+            </button>
+        </div>
+        <div class="tela_form">
+            <div class="container_form">
+                <form>
+                    <div>
+                        <fieldset>
+                            <legend>Dados Pessoais:</legend>
+                            <label for="nome">
+                                Nome:
+                                <input placeholder="Primeiro nome" type="text" name="nome" id="nome" required
+                                    maxlength="15">
+                            </label>
+                            <label for="surname">
+                                Sobrenome:
+                                <input placeholder="Sobrenome" type="text" name="surname" id="surname" required>
+                            </label>
+                            <label for="phone">
+                                Telefone:
+                                <input placeholder="Ex: (xx) xxxxx - xxxx" type="tel" maxlength="12" name="phone"
+                                    id="phone" required>
+                            </label>
+                            <label for="email">
+                                Email:
+                                <input type="email" name="email" id="email" placeholder="fulanodetal@ciclano.com"
+                                    required>
+                            </label>
+                            <label for="email">
+                                CPF:
+                                <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx" required>
+                            </label>
+                            <label for="nascimento">
+                                Data de nascimento:
+                                <input id="calendario" type="date" name="nascimento" id="nascimento"
+                                    placeholder="xxx.xxx.xxx-xx" required>
+                            </label>
+                            <label>
+                                Gênero:
+                                <div class="radioGenero">
+                                    <label for="Masculino"><input type="radio" name="genero" id="Masculino"
+                                            required>Masculino</label>
+                                    <label for="Feminino"><input type="radio" name="genero" id="Feminino"
+                                            required>Feminino
+                                    </label>
+                                </div>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Endereço:</legend>
+                            <label for="estado">
+                                Estado:
+                                <select id="estado">
+                                    <option id="blankSelect">Selecione um estado...</option>
+                                </select>
+                            </label>
+                            <label class="rua" for="rua">
+                                Rua:
+                                <input type="text" name="rua" id="rua" placeholder="Ex:Av. Nações Unidas" required>
+                                <input type="text" placeholder="20">
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar Dados" />
+                        <input type="reset" value="Limpar formulário">
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </main>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

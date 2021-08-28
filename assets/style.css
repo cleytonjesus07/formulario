@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    opacity: .2;
+    transition: linear 500ms;
+}
+button:hover{
+   opacity: 1;
+}
+
+main{
+   display: flex;
+
+}
+
+.tela_menu{
+    flex: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tela_form{
+    flex: 1;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.container{
+    background: url("../nightSky.gif");
+    background-repeat: repeat-x;
+    background-size: calc(100%/2) 100%;
+}
+
+.container_form{
+    border: 3px solid rgba(255, 255, 255, .2);
+    border-radius:10px;
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  
+   padding: 20px;
+}
+
+form>div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+form > div:nth-child(2){
+    margin-top: 10px;
+    padding: 20px;
+    border-top: 1px solid white;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+form > div:nth-child(2) > input{
+    width: calc(100%/9);
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: linear 500ms background-color,color;
+}
+
+form > div:nth-child(2) > input:hover{
+    background-color: white;
+    color: black;
+}
+
+
+input,select{
+   
+   padding: 10px;
+   width: 100%;
+    border: 1px solid white;
+   transition: linear border-radius 200ms;
+   margin: 2px 0;
+  background-color: rgba(255, 255, 255, .9);
+}
+
+select option{
+    background-color: transparent;
+}
+
+input:focus,select:focus{
+    outline: none;
+    border-radius:10px ;
+    
+}
+
+.radioGenero {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+
+.radioGenero > label{
+    width: 100px;
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+    cursor: pointer;
+}
+
+
+
+.rua{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rua input{
+    margin: 10px;
+}
+
+.rua input:nth-child(1){
+    flex: 5;
+}
+.rua input:nth-child(2){
+    flex: 1;
+}
+
+
+
+    
+
+
+label{
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+fieldset{
+    flex: 1;
+    opacity: .2;
+   padding: 20px;
+margin-right: 10px;
+border-radius: 10px;
+}
+
+
+
+
+legend{
+    color: white;
+}
+
+fieldset:focus-within{
+    opacity: 1;
+}
+
